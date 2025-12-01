@@ -1,8 +1,8 @@
 ## Setup
 
 Set up env vars using `direnv`, or similar
-- AOC_SESSION - The Session cookie from your browser once you've logged into the AOC website
-- AOC_USERAGENT - A string indicating who you are
+- AOC_SESSION - The Session cookie from your browser once you've logged into the AOC website, formatted like "session:..."
+- AOC_USERAGENT - A string indicating who you are. Like "github.com/chadjaros/advent-of-code chad.jaros@gmail.com"
 
 ## Years
 
