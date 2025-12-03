@@ -16,7 +16,7 @@ Set up env vars using `direnv`, or similar
 
 ### Typescript
 ```bash
-# Downwload input and run file
+# Download input and run file
 > npm start --file=2015/1/a
 
 # Init directory and download input
