@@ -1,15 +1,9 @@
 import { aoc } from '../../ts-utils/aoc';
 import { Series } from '../../ts-utils/series';
+import { DecMath } from '../../ts-utils/dec-math';
 
 aoc((infile) => {
     const input = infile.lines.map((l) => l.split('').map((x) => parseInt(x)));
-
-    function pow10(n: number): number {
-        if (n === 1) {
-            return 1;
-        }
-        return 10 * pow10(n - 1);
-    }
 
     let value = input.reduce((acc, line) => {
         const digit = Array.from(Series.of(12, 0));
@@ -29,7 +23,7 @@ aoc((infile) => {
         }
 
         const joltage = digit.reduce((acc, d, i) => {
-            return acc + pow10(12 - i) * d;
+            return acc + DecMath.pow10(12 - i) * d;
         }, 0);
 
         return acc + joltage;
